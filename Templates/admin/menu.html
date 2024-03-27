@@ -1,0 +1,11 @@
+{% extends 'admin/menu.html' %}
+{% load static %}
+{% block branding %}
+<a class="item" href="{% url 'admin:index' %}">
+  <img 
+    title="Magic! Ponies! Django! Whee!" 
+    src="{% static 'images/favicon.ico' %}" 
+    alt="{{ site_header|default:_('Django administration') }}" />
+</a>
+<h2 style="color:white; margin:0.43rem;font-size: 1.2rem;">Verantes Admin Portal</h2>
+{% endblock %}

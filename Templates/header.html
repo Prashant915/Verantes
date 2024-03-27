@@ -1,0 +1,285 @@
+{% load static %}
+<header class="header-nav-center no_blur header__workspace active-orange-logo"
+  id="myNavbar">
+  <div class="container-fluid padding-px-8 padding-t-0">
+    <div class="topnav padding-t-1 d-none d-md-block ">
+
+      <div class="row">
+        <div class="col-md-6 text-left">
+          <ul class="pl-0">
+
+            <li>
+
+              <a href="#booknow">Partner with Verantes Living</a>
+            </li>
+            <li>
+
+              <a href="#booknow">Join Verantes</a>
+            </li> <li>
+
+              <div class="dropdown custom-dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-link"
+                  aria-haspopup="true" aria-expanded="false">
+                  <span class="icon-layers mr-1"></span>
+                  Location <span class="icon-keyboard_arrow_down arrow"></span>
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+                  <div class="mega-menu d-flex">
+                    <div>
+
+                      <ul class="list-unstyled">
+                        <li><a
+                            href="interior-designers-in-ahmedabad">Ahmedabad</a></li>
+                        <li><a
+                            href="interior-designers-in-bengaluru">Bengaluru</a></li>
+
+                        <li><a
+                            href="interior-designers-in-bhubaneswar">Bhubaneswar</a></li>
+
+                        <li><a
+                            href="interior-designers-in-chennai">Chennai</a></li>
+
+                        <li><a
+                            href="interior-designers-in-coimbatore">Coimbatore</a></li>
+
+                        <li><a
+                            href="interior-designers-in-ghaziabad">Ghaziabad</a></li>
+
+                        <li><a
+                            href="interior-designers-in-gurgaon">Gurgaon</a></li>
+
+                        <li><a
+                            href="interior-designers-in-hyderabad">Hyderabad</a></li>
+
+                      </ul>
+                    </div>
+                    <div>
+
+                      <ul class="list-unstyled">
+                        <li><a
+                            href="interior-designers-in-jaipur">Jaipur</a></li>
+
+                        <li><a href="interior-designers-in-kochi">Kochi</a></li>
+
+                        <li><a
+                            href="interior-designers-in-kolkata">Kolkata</a></li>
+
+                        <li><a
+                            href="interior-designers-in-lucknow">Lucknow</a></li>
+
+                        <li><a
+                            href="interior-designers-in-madurai">Madurai</a></li>
+
+                        <li><a
+                            href="interior-designers-in-mumbai">Mumbai</a></li>
+
+                        <li><a
+                            href="interior-designers-in-mysore">Mysore</a></li>
+
+                        <li><a
+                            href="interior-designers-in-nagpur">Nagpur</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <!--   <h3 class="text-danger">Economic</h3>-->
+                      <ul class="list-unstyled">
+                        <li><a href="interior-designers-in-new delhi">New
+                            Delhi</a></li>
+
+                        <li><a href="interior-designers-in-noida">Noida</a></li>
+
+                        <li><a href="interior-designers-in-pune">Pune</a></li>
+
+                        <li><a
+                            href="interior-designers-in-ranchi">Ranchi</a></li>
+
+                        <li><a href="interior-designers-in-salem">Salem</a></li>
+
+                        <li><a href="interior-designers-in-surat">Surat</a></li>
+
+                        <li><a
+                            href="interior-designers-in-trichy">Trichy</a></li>
+
+                        <li><a
+                            href="interior-designers-in-vijayawada">Vijayawada</a></li>
+
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </li>
+            <li>
+
+              <a href="#booknow">Refer and Earn</a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="col-md-6 text-right">
+          <ul>
+
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-telephone-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+              </svg>
+
+              <a class href="#" role="button" id="needhelpddm"
+                data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Need help?
+              </a>
+
+              <div class="dropdown-menu menufont" aria-labelledby="needhelpddm">
+                <a class="dropdown-item " href="#">Raise a issue</a>
+                <a class="dropdown-item" href="#">Contact Us</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">F.A.Q</a>
+              </div>
+            </li>
+            <li>
+
+              <a href="#booknow">Visit Us</a>
+            </li>
+
+            {% if not request.user.is_authenticated %}
+            <li class>
+              <a href="{% url 'signup' %}"
+                class="hidebtn">Login/Register</a><!-- changes -->
+            </li>
+            {% endif %}
+
+            {% if request.user.is_authenticated %}
+            <li><a href="" class="log-user"><i class="fa-solid fa-circle-user"
+                  style="color: #858585;"></i></a></li>
+                
+            {% endif %}
+    
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- signin changes -->
+   
+    {% include 'signup.html' %}
+    <!-- sigin changes -->
+
+    {% include 'login.html' %}
+
+    <!-- otp -->
+
+    {% include 'otppage.html' %}
+    <!-- navbar -->
+    {% include 'loginotp.html' %}
+    <nav class="navbar navbar-expand-lg navbar-light px-sm-0">
+
+      <a class="navbar-brand" href="{% url 'homepage' %}">
+        <img class="logo" src="{% static 'images/logo-o.png' %}"
+          alt="Verantes living" />
+      </a>
+
+      <button class="navbar-toggler menu ripplemenu" type="button"
+        data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <svg viewBox="0 0 64 48">
+          <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+          <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+          <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+        </svg>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav mx-auto nav-pills">
+          <li class="nav-items">
+
+            <a class="nav-links btn btn-sm" href="{% url 'signup' %}">Login</a>
+          </li>
+          <li class="nav-item">
+
+            <a class="nav-link" href="{% url 'design-gallery' %}">Design
+              gallery</a>
+          </li>
+          <li class="nav-item">
+
+            <a class="nav-link" href="{% url 'moduler-kitchen' %}">Modular
+              Kitchen</a>
+          </li>
+          <li class="nav-item">
+
+            <a class="nav-link" href="{% url 'wordrobe' %}">Wordrobe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'vanity-units' %}">Vanity units</a>
+          </li>
+          <li class="nav-item">
+
+            <a class="nav-link" href="{% url 'barkitchen' %}">Bar Kitchens</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Customer Stories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">The design Journal</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Book Design Consultation</a>
+          </li>
+        </ul>
+        <div class="nav_account btn_demo3">
+
+          <a href="#"
+            class="btn btn_md_primary sweep_top sweep_letter c-white bg-dark opacity-1 rounded-8">
+            <div class="inside_item">
+              <span data-hover="Get FREE Design">Get FREE Estimate</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </nav>
+    <!-- End Navbar -->
+    
+    <div class="log-option">
+      <ul class="navbar-nav mx-auto nav-pills">
+      <li class="nav-item d-flex">
+          <div class="p-3"><i class="fa-solid fa-circle-user" style="color: #858585;"></i></div>
+          <div class="p-3">
+            <h5 class="m-0">{{request.user.username}}</h5>
+            <p class="m-0">{{request.user.email}}</p>
+          </div>
+        </li>
+        <li class="nav-item d-flex align-items-center ">
+        <i class="fa-solid fa-house"></i>
+          <a href="">Account</a>
+        </li>
+        <li class="nav-item d-flex align-items-center">
+        <i class="fa-solid fa-handshake"></i>
+          <a href="">Price Estimate</a>
+        </li>
+        <li class="nav-item d-flex align-items-center">
+        <i class="fa-solid fa-paint-roller"></i>
+          <a href="">Design Library</a>
+        </li>
+        <li class="nav-item d-flex align-items-center">
+        <i class="fa-solid fa-headset"></i>
+          <a href="">Customer Support</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn" href="{% url 'attempt_logout' %}">Logout</a>
+        </li>
+      </ul>
+</div>
+  </div>
+  <!-- end container -->
+</header>

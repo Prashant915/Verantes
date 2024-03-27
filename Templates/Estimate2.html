@@ -1,0 +1,138 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	  	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P323NJGM');</script>
+<!-- End Google Tag Manager -->
+	  
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+
+  <title>Verantes living</title>
+	  
+  <link rel="stylesheet" href="{% static 'css/estimate.css' %}" type="text/css">
+    {% include 'css.html' %}
+
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P323NJGM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="formhead">
+    <div>
+        <img src="{% static 'images/logo-o.png' %}" alt="Verantes Logo">
+    </div>
+</div>
+<div class="flowIndicationTitle">
+    <span class="FITitle" id="step01">TELL US WHAT YOU NEED</span>
+    <span class="FICounts">STEP <!-- -->2<!-- --> OF<!-- -->3</span>
+</div>
+<div class="componentswithbuttons" style="margin:0 auto">
+    <div class="yourFloorPlanContainer">
+        <div class="sideOne">
+            <div class="FPC_Container_Estimate">
+                <div class="EFTitle">Your requirements for 3 BHK
+                    <div class="asterisk">*</div>
+                </div>
+                <div class=" flexCont">
+                    <label class="flex">Kitchen
+                        <input type="checkbox" name="rooms"
+                            id="check" disabled
+                            value="Kitchen" checked>
+                            <span class="checkmark"></span>
+                    </label>
+                        <div class=" flex">Wardrobe
+                            <div class="wardrobe-inputgrp">
+                                <div class="addOnCount">
+                                 <button class="quantBtn removebtn"
+                                    action="remove">−</button>
+                                <input class="intQuant"
+                                    type="text"
+                                    name="bed_count"
+                                    disabled
+                                    value="3">
+                                <button class="quantBtn"
+                                    action="add">＋</button>
+                                </div>
+                            </div>
+                            <span
+                                class="helperText">(Number of
+                                wardrobes can’t exceed the
+                                number of
+                                bedrooms)
+                            </span>
+                        </div>
+                        <div class=" flex">Entertainment unit
+                            <div class="wardrobe-inputgrp">
+                                <div class="addOnCount">
+                                    <button class="quantBtn removebtn"
+                                            inttype="entertainment"
+                                            action="remove">−</button>
+                                    <input class="intQuant" type="text" disabled value="1">
+                                    <button class="quantBtn" inttype="entertainment" action="add">＋</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" flex">Study unit
+                            <div class="wardrobe-inputgrp">
+                                <div class="addOnCount">
+                                    <button class="quantBtn removebtn"
+                                            inttype="study"
+                                            action="remove">−</button>
+                                        <input class="intQuant"
+                                                type="text" disabled
+                                                value="1">
+                                        <button class="quantBtn"
+                                                inttype="study"
+                                                action="add">＋</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" flex">Crockery unit
+                            <div class="wardrobe-inputgrp">
+                                <div class="addOnCount">
+                                    <button class="quantBtn removebtn"
+                                            inttype="crockery"
+                                            action="remove">−</button>
+                                    <input  class="intQuant"
+                                            type="text" disabled
+                                            value="1">
+                                    <button class="quantBtn"
+                                            inttype="crockery"
+                                            action="add">＋</button>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="sideTwo">
+            <div class="sideImage">
+                <img src="{% static 'images/step1.png' %}">
+            </div>
+            <div class="sidetwotext">
+                <p>Your Ideas. Our Expertise.</p>
+                <p> Our 600+ design experts use state-of-the-art 3D design technology,
+                 SpaceCraft, to ensure that you get the perfect designs for your home.
+                  Wait no more! Start your home interiors journey with us.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% include 'js.html' %}
+</body>
+</html>

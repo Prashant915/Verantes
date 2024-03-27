@@ -1,0 +1,506 @@
+body,html{
+    zoom:115%;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fafafa;
+}
+.flowIndicationTitle {
+    height: auto;
+    width: 100%;
+    color: #8e8e90;
+    font-size: 1.2rem;
+    line-height: 18px;
+    text-align: center;
+    margin: 1.4rem auto;
+  }
+  
+  .flowIndicationTitle>.FITitle {
+    height: 22px;
+    width: 10.88rem;
+    color: #4a4a4a;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 22px;
+    text-align: center
+  }
+  
+  .FICounts {
+    padding-top: 0.4rem;
+    color: #4a4a4a;
+    display: block;
+    font-size: 1rem;
+    letter-spacing: 0;
+    line-height: 16px
+  }
+  
+  .yourFloorPlanContainer {
+    width: 100%;
+    margin: 16px auto;
+    display: flex
+  }
+  .yourFloorPlanContainer .FPCTitle {
+    height: 19px;
+    width: 120px;
+    color: #222;
+    font-size: 16px
+  }
+  
+  .sideOne * {
+    font-size: 100%
+  }
+  
+  
+  .radio-buttons-container {
+    width: 93%;
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .yourFloorPlanContainer .sideOne {
+    height: auto;
+    width: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+    background-color: #fff;
+    padding:0.5rem;
+  }
+  
+  .yourFloorPlanContainer .sideTwo {
+    height:auto;
+    width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 0 7px 7px 0;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+  }
+  .sidetwotext p:nth-child(1){
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  .sidetwotext p:nth-child(2){
+    font-size: 0.9rem;
+    color: rgb(65, 65, 65);
+    padding:0 3.5rem 3rem 3.5rem;
+    text-align: center;
+  }
+  .sideImage {
+    padding-top:1.5rem;
+    width: 75%;
+    border-radius: 6px;
+    background-color: #fff;
+  }
+  .sideImage img{
+    width:100%;
+    height: 100%;
+  }
+  
+  
+  input:-internal-autofill-selected {
+    background-color: #fff !important
+  }
+  
+  .purpose-section {
+    margin-top: 16px;
+    width: 93%;
+    display: flex;
+    color: #c1a124;
+    font-size: 0.875rem;
+    letter-spacing: 0;
+    line-height: 1rem;
+    text-align: center;
+    justify-content: space-between;
+  }
+  
+  .purpose-section .purpose-toggle-button {
+    box-sizing: border-box;
+    width:30%;
+    padding: 0.5rem;
+    margin: 0.2rem;
+    border: 1px solid #c1a124;
+    border-radius: 6px;
+    background-color: #fff;
+    background-color: #fff;
+    color: #c1a124
+  }
+  
+  .purpose-section .purpose-toggle-button:hover {
+    color: #fff;
+    background-color: #c1a124
+  }
+  
+  #renovate {
+    position: absolute;
+    top: -3px;
+    left: 5px
+  }
+  
+  
+  .purpose-section .purpose-toggle-button:focus {
+    outline: none
+  }
+  
+  .purpose-section .active {
+    color: #fff;
+    background-color: #c1a124
+  }
+  
+  
+  .radio-toolbar {
+    height: 2.1rem;
+    width: 6rem;
+  }
+  
+  .radio-toolbar input[type=radio] {
+    opacity: 0;
+    position: fixed;
+    width: 0
+  }
+  
+  .radio-toolbar label {
+    display: inline-block;
+    height: 32px;
+    width: 80%;
+    box-sizing: border-box;
+    border: 1px solid #c1a124;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #c1a124;
+    font-size: 0.87rem;
+    letter-spacing: 0;
+    line-height: 17px;
+    text-align: center;
+    padding-top: 7px;
+    cursor: pointer
+  }
+  
+  .radio-toolbar label:hover {
+    background-color: #c1a124;
+    color: #fff
+  }
+  
+  
+  .radio-toolbar input[type=radio]:checked+label {
+    background-color: #c1a124;
+    color: #fff
+  }
+  
+  input[disabled] {
+    -webkit-text-fill-color: #4a4a4a;
+    color: #fff
+  }
+  .componentswithbuttons{
+    width:75%
+  }
+  @media(max-width:850px) {
+    .componentswithbuttons {
+        width: 100% !important
+    }
+    .flex{
+        width:80%;
+    }
+    .yourFloorPlanContainer .sideOne{
+        border-right: 1px solid #ccc;
+        border-radius: 8px;
+        width: 100%;
+        height:400px;
+        padding:0;
+    }
+  
+    .yourFloorPlanContainer .sideTwo{
+        display: none
+    }
+  
+  }
+  /* getestimate2 starts from here */
+  
+  
+  
+  input {
+    font-family: Lato, sans-serif
+  }
+  
+  
+  .flowIndicationTitle {
+    height: 36px;
+    width: auto;
+    color: #8e8e90;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    margin: 20px auto
+  }
+  
+  .flowIndicationTitle>.FITitle {
+    height: 22px;
+    width: 163px;
+    color: #4a4a4a;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 22px;
+    text-align: center
+  }
+  
+  
+  .FICounts {
+    padding-top: 6px;
+    color: #4a4a4a;
+    display: block;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: 16px
+  }
+  
+  
+  .FPCFloorplans {
+    height: 67px;
+    width: 93%;
+  }
+  
+  .radio-buttons-container {
+    height: 32px;
+    width: 100%;
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between
+  }
+  
+  
+  input:-internal-autofill-selected {
+    background-color: #fff !important
+  }
+  
+  
+  .yourFloorPlanContainer .EFTitle {
+    height: 19px;
+    width: 100%;
+    color: #222;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 19px;
+    display: flex
+  }
+  
+  .asterisk {
+    color: #e71c24
+  }
+  .yourFloorPlanContainer .sideOne .FPC_Container_Estimate input[type=checkbox] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    
+  }
+  
+  .yourFloorPlanContainer .sideOne .checkmark {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 18px;
+    width: 18px;
+    border: 1.5px solid #dfd29e;
+    border-radius: 2px;
+    margin-right: 10px
+  }
+  
+  .yourFloorPlanContainer .sideOne .checkmark:after {
+    border-color: #e0d39c
+  }
+  
+  .yourFloorPlanContainer .sideOne .flex:hover input~.checkmark {
+    background-color: #ccc
+  }
+  
+  .yourFloorPlanContainer .sideOne .flex input:checked~.checkmark {
+    background-color: #fff;
+    color: #c1a124
+  }
+  
+  #bed_count {
+    height: 23px;
+    width: 30px;
+    border: none;
+    background-color: #c1a124;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    top: -6px;
+    text-align: center
+  }
+  .FPC_Container{
+    padding:3rem 0.3rem 0 1rem;
+  }
+  
+  .FPC_Container_Estimate {
+    height: 324px;
+    width: 93%;
+    margin: 22px 24px 0;
+    
+  }
+  
+  .removebtn {
+    color: #c1a124 !important;
+    border-color: #c1a124 !important
+  }
+  
+  
+  .flexCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: gray
+  }
+  
+  .addOnCount {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+  }
+  
+  .addOnCount * {
+    font-weight: 500
+  }
+  
+  .quantBtn {
+    width: 18px;
+    border: 1.5px solid #c1a124;
+    height: 18px;
+    background: 0 0;
+    line-height: 13px;
+    color: #c1a124;
+    text-align: center;
+    padding: 0;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 2px;
+    vertical-align: middle
+  }
+  
+  
+  .quantBtn:focus {
+    outline: none
+  }
+  
+  .intQuant {
+    height: 18px;
+    width: 16px;
+    color: #4a4a4a;
+    text-align: center;
+    background-color: #fff;
+    font-size: 100%;
+    letter-spacing: 0;
+    line-height: 20px;
+    border-style: none;
+    pointer-events: none;
+    -webkit-text-fill-color: #4a4a4a;
+    padding-bottom: 0;
+    vertical-align: middle
+  }
+  
+  .flex {
+    display: flex;
+    flex-direction: row;
+    height: 46px;
+    width: 100%;
+    border-bottom: 1px solid #e4e4e4;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 15px;
+    color: #4a4a4a;
+    font-size: 14px !important;
+    letter-spacing: 0;
+    line-height: 17px
+  }
+  
+  .wardrobe-inputgrp {
+    height: 24px;
+    width: 69px;
+    align-items: center
+  }
+  
+  .yourFloorPlanContainer .helperText {
+    position: absolute;
+    font-size: 10px;
+    color: grey;
+    top: 17px;
+    width:70%;
+  }
+  
+  .flex input:checked~.checkmark:after {
+    display: block
+  }
+  
+  .flex .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none
+  }
+  
+  .flex .checkmark:after {
+    right: 5px;
+    top: 1px;
+    width: 6px;
+    height: 10px;
+    border: solid #c1a124;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg)
+  }
+  
+  @media(min-width:850px) {
+    .componentswithbuttons.step1 {
+        display: flex;
+        align-items: center
+    }
+  
+  }
+  
+  input[disabled] {
+    -webkit-text-fill-color: #4a4a4a;
+    color: #fff
+  }
+  
+  .componentswithbuttons.step1 {
+    height: 100%
+  }
+  
+  
+  @media(max-width:1200px) {
+    
+    .componentswithbuttons.step1 {
+        margin-right: 3% !important
+    }
+    .componentswithbuttons{
+        width:90%;
+    }
+  }
+  
+  .formhead{
+    height:11%;
+    background-color: white;
+    width: 100%;
+    border-bottom: 3px hidden grey;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 3px rgb(213, 212, 212);
+  }
+  .formhead img{
+    width:14rem;
+    margin-left: 3rem;
+    
+  }  

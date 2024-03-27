@@ -1,0 +1,1213 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	  	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P323NJGM');</script>
+<!-- End Google Tag Manager -->
+	  
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+
+  <title>Verantes living</title>
+	  
+	  
+  {% include 'css.html' %}
+
+  
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P323NJGM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <div id="wrapper">
+    <div id="content">
+      <!-- Start header -->
+      {% include 'header.html' %}
+      <!-- End header -->
+
+      <!-- Stat main -->
+      <main data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+        <!-- Start Banner Section -->
+        <section class="demo_1 demo__charity_inner demo__workspace" id="booknow">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-lg-6">
+                <div class="banner_title_other padding-b-14">
+					<h1><span>{{banner.Title}}</span></h1>
+                </div>
+              </div>
+              {% include 'contact.html' %}
+            </div>
+          </div>
+
+          <div class="bg__cover_office_inside">
+            <div class="img__off">
+              <img src="/media/{{banner.Image}}" alt="">
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="item__conatct">
+               <!--     <div class="item__top text-lg-left text-sm-center">
+                      <h3 class="">Your Dream wordrobe Awaits</h3>
+                      <p>At Verantes Living, our expert wordrobe designers are here to do the heavy lifting for you.</p>
+                    </div>-->
+            
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+        <!-- End Banner -->
+
+		  
+		  
+		  
+		  
+		  
+    
+		  
+<!-- The Verantes wordrobe ranger -->
+      	
+		  <section class="section__stories blog_slider padding-t-9 padding-px-6">
+          <div class="container">
+			          <div class="col-lg-12">
+				     <div class="padding-b-5 text-left">
+                       <h1>The Verantes wordrobe range</h1>
+						<p>Select from our range of wardrobes suited for varying styles and budgets.</p>
+                    </div>
+				   </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-12">
+                <div class="swip__stories">
+                  <!-- Swiper -->
+                  <div class="swiper-container moduler-slider">
+                    <div class="title_sections_inner2">
+                 
+                    </div>
+                    <div class="swiper-wrapper">
+                      {% for i in slider %}
+                      {% if i.catogory|stringformat:"s" == "Verantes wordrobe range" %}
+                      <div class="swiper-slide">
+                        <div class="grid_blog_avatar grid_blog_avatar_2">
+                          <div class="cover_blog">
+                            <img src="/media/{{i.Image}}" alt="">
+                          </div>
+                        <div class="body_blog">
+                   
+
+                            <a href="single-blog.html" class="caption-item text-center">
+                              <h4>
+                                {{i.Title}}
+                              </h4>
+								              <p>{{i.Description|safe}}</p>
+                            
+                            </a>
+
+                          </div>
+                        </div>
+                        <!-- End grid_blog_avatar -->
+                      </div>
+                      {% endif %}
+                      {% endfor %}
+                    </div>
+
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next">
+                      <i class="tio chevron_right"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                      <i class="tio chevron_left"></i>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+
+		       <!-- 9 reason -->
+        <section class="service__workspace features__workspace padding-py-12" id="whyus">
+          <div class="container">
+            <div class="row justify-content-center text-center">
+              <div class="col-md-8 col-lg-6">
+                <div class="title_sections">
+               <!--   <div class="before_title">
+                    <span class="c-orange-red">Features</span>
+                  </div>-->
+                  <h2>9 Reasons to Choose Verantes Living</h2>
+                  <p>Discover why Verantes Living is the top choice for stainless steel wordrobes, wardrobes, vanity units and bars with these 9 distinctive advantages.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-lg-4 fa_item">
+                <div class="inside__zoop" data-aos="fade-up" data-aos-delay="0">
+                  <div class="media">
+                    <div class="ico">
+                   <img src="{% static 'images/hourglass.png'%}">
+                    </div>
+                    <div class="media-body">
+                      <div class="t_xt">
+                        <h4>Lifetime Durability</h4>
+                        <p>Enduring Excellence Guaranteed</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 fa_item">
+                <div class="inside__zoop" data-aos="fade-up" data-aos-delay="100">
+                  <div class="media">
+                    <div class="ico">
+                      <img src="{% static 'images/sketch.png'%}">
+                    </div>
+                    <div class="media-body">
+                      <div class="t_xt">
+                        <h4>Clean and Germ-Free</h4>
+                        <p>Spotless and Non-Porous</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 fa_item">
+                <div class="inside__zoop" data-aos="fade-up" data-aos-delay="200">
+                  <div class="media">
+                    <div class="ico">
+                      <img src="{% static 'images/waterproof-fabric.png'%}">
+                    </div>
+                    <div class="media-body">
+                      <div class="t_xt">
+                        <h4>Waterproof Wonders</h4>
+                        <p>Moisture-Proof Marvels</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 fa_item">
+                <div class="inside__zoop" data-aos="fade-up" data-aos-delay="0">
+                  <div class="media">
+                    <div class="ico">
+                  <img src="{% static 'images/pest-control.png'%}"> 
+                    </div>
+                    <div class="media-body">
+                      <div class="t_xt">
+                        <h4>Pest-Free Assurance</h4>
+                        <p>Stainless Steel is impenetrable</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 fa_item">
+                <div class="inside__zoop" data-aos="fade-up" data-aos-delay="100">
+                  <div class="media">
+                    <div class="ico">
+                 <img src="{% static 'images/save.png'%}">
+                    </div>
+                    <div class="media-body">
+                      <div class="t_xt">
+                        <h4>Sensibly Priced</h4>
+                        <p>Worth every penny</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 fa_item">
+                <div class="inside__zoop" data-aos="fade-up" data-aos-delay="200">
+                  <div class="media">
+                    <div class="ico">
+               <img src="{% static 'images/plant-based.png'%}">
+                    </div>
+                    <div class="media-body">
+                      <div class="t_xt">
+                        <h4>Eco-Conscious</h4>
+                        <p> Sustainability Embedded Grace</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 fa_item">
+                <div class="inside__zoop" data-aos="fade-up" data-aos-delay="100">
+                  <div class="media">
+                    <div class="ico">
+                      <img src="{% static 'images/flameproof-fabric.png'%}">
+                    </div>
+                    <div class="media-body">
+                      <div class="t_xt">
+                        <h4>Fire-Resistant Strength</h4>
+                        <p>Unyielding Against Flames</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 fa_item">
+                <div class="inside__zoop" data-aos="fade-up" data-aos-delay="100">
+                  <div class="media">
+                    <div class="ico">
+                       <img src="{% static 'images/mute.png'%}">
+                    </div>
+                    <div class="media-body">
+                      <div class="t_xt">
+                        <h4>Noiseless Operation</h4>
+                        <p>Serene Silence Ensured</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+				<div class="col-md-6 col-lg-4 fa_item">
+                <div class="inside__zoop" data-aos="fade-up" data-aos-delay="100">
+                  <div class="media">
+                    <div class="ico">
+                       <img src="{% static 'images/texture.png'%}">
+                    </div>
+                    <div class="media-body">
+                      <div class="t_xt">
+                        <h4>5000+ Finishes and Textures</h4>
+                        <p>Limitless Aesthetic Options</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+		   <!-- Wardrobe for everyone -->
+
+        <section class="section__stories blog_slider padding-t-9 padding-px-6">
+          <div class="container">
+			          <div class="col-lg-12">
+				     <div class="padding-b-5 text-left">
+                       <h1>Wardrobes for everyone</h1>
+						<p>A wardrobe is personal. Let's create one unique to your needs.</p>
+                    </div>
+				   </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-12">
+                <div class="swip__stories">
+                  <!-- Swiper -->
+                  <div class="swiper-container moduler-slider">
+                    <div class="title_sections_inner2">
+                 
+                    </div>
+                    <div class="swiper-wrapper">
+                      {% for i in slider %}
+                      {% if i.catogory|stringformat:"s" == "Wordrobe for Everyone" %}
+                      <div class="swiper-slide">
+                        <div class="grid_blog_avatar grid_blog_avatar_2">
+                          <div class="cover_blog">
+                            <img src="/media/{{i.Image}}" alt="">
+                          </div>
+                        <div class="body_blog">
+                            <a href="single-blog.html" class="caption-item text-center">
+                              <h4>
+                                {{i.Title}}
+                              </h4>
+								              <p>{{i.Description|safe}}</p>
+                            
+                            </a>
+
+                          </div>
+                        </div>
+                        <!-- End grid_blog_avatar -->
+                      </div>
+                        {% endif %}
+                      {% endfor %}
+                    </div>
+
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next">
+                      <i class="tio chevron_right"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                      <i class="tio chevron_left"></i>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- end wordrobe for everyone -->
+        <!-- start types of wardrobe -->
+        <section class="service__workspace blog_slider padding-t-9 padding-px-6">
+          <div class="container">
+			          <div class="col-lg-12">
+				     <div class="padding-b-5 text-left">
+                       <h1>Types of Wardrobes</h1>
+						<p>Your wardrobe influences your daily routine. Choose one that fits right.</p>
+                    </div>
+				   </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-12">
+                <div class="swip__stories">
+                  <!-- Swiper -->
+                  <div class="swiper-container moduler-slider">
+                    <div class="title_sections_inner2">
+                 
+                    </div>
+                    <div class="swiper-wrapper">
+                      {% for i in slider %}
+                      {% if i.catogory|stringformat:"s" == "Types of Wardrobes" %}
+                      <div class="swiper-slide">
+                        <div class="grid_blog_avatar grid_blog_avatar_2">
+                          <div class="cover_blog">
+                            <img src="/media/{{i.Image}}" alt="">
+                          </div>
+                        <div class="body_blog">
+                   
+
+                            <a href="single-blog.html" class="caption-item text-center">
+                              <h4>
+                                {{i.Title}}
+                              </h4>
+								        <p>{{i.Description|safe}}</p>
+                            
+                            </a>
+
+                          </div>
+                        </div>
+                        <!-- End grid_blog_avatar -->
+                      </div>
+                      {% endif %}
+                      {% endfor %}
+
+                    </div>
+
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next">
+                      <i class="tio chevron_right"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                      <i class="tio chevron_left"></i>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+		  <!--shutetr finish-->
+		  
+		      	<section class="section__stories blog_slider padding-t-9 padding-px-6">
+          <div class="container">
+			          <div class="col-lg-12">
+				     <div class="padding-b-5 text-left">
+                      <h1>Style your wardrobe</h1>
+						<p>Add elegance to your room by getting the look that you want.</p>
+                    </div>
+				   </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-12">
+                <div class="swip__stories">
+                  <!-- Swiper -->
+                  <div class="swiper-container moduler-slider">
+                    <div class="title_sections_inner">
+                      <h2>
+                      Wardrobe Shutter Types</h2>
+                    </div>
+                    <div class="swiper-wrapper">
+                      {% for i in slider %}
+                      {% if i.catogory|stringformat:"s" == "Wardrobe Shutter Types" %}
+                      <div class="swiper-slide">
+                        <div class="grid_blog_avatar grid_blog_avatar_2">
+                          <div class="cover_blog">
+                            <img src="/media/{{i.Image}}" alt="">
+                          </div>
+                        <div class="body_blog">
+                   
+
+                            <a href="single-blog.html" class="caption-item text-center">
+                              <h4>
+                                {{i.Title}}
+                              </h4>
+								                <p>{{i.Description|safe}}</p>
+                            
+                            </a>
+
+                          </div>
+                        </div>
+                        <!-- End grid_blog_avatar -->
+                      </div>
+                      {% endif %}
+                      {% endfor %}
+                    </div>
+
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next">
+                      <i class="tio chevron_right"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                      <i class="tio chevron_left"></i>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+      
+
+
+<!-- Handles -->
+		  
+	<section class="section__stories blog_slider padding-t-9 padding-px-6">
+          <div class="container">
+			    
+            <div class="row justify-content-center">
+              <div class="col-lg-12">
+                <div class="swip__stories">
+                  <!-- Swiper -->
+                  <div class="swiper-container moduler-slider">
+                    <div class="title_sections_inner">
+                      <h2>
+Handles</h2>
+                    </div>
+                    <div class="swiper-wrapper">
+                      {% for i in slider %}
+                      {% if i.catogory|stringformat:"s" == "Handles" %}
+                      <div class="swiper-slide">
+                        <div class="grid_blog_avatar grid_blog_avatar_2">
+                          <div class="cover_blog">
+                            <img src="/media/{{i.Image}}" alt="">
+                          </div>
+                        <div class="body_blog">
+                   
+
+                            <a href="single-blog.html" class="caption-item text-center">
+                              <h4>
+                                {{i.Title}}
+                              </h4>
+								              <p>{{i.Description|safe}}</p>
+                            
+                            </a>
+
+                          </div>
+                        </div>
+                        <!-- End grid_blog_avatar -->
+                      </div>
+                      {% endif %}
+                      {% endfor %}
+                    </div>
+
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next">
+                      <i class="tio chevron_right"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                      <i class="tio chevron_left"></i>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>	  
+		  
+	<!-- Countertops and Backsplashes -->
+		  
+	<section class="section__stories blog_slider padding-t-9 padding-px-6">
+          <div class="container">
+			    
+            <div class="row justify-content-center">
+              <div class="col-lg-12">
+                <div class="swip__stories">
+                  <!-- Swiper -->
+                  <div class="swiper-container moduler-slider">
+                    <div class="title_sections_inner">
+                      <h2>
+                      Wardrobe Shutter Finishes</h2>
+                    </div>
+                    <div class="swiper-wrapper">
+                      {% for i in slider %}
+                      {% if i.catogory|stringformat:"s" == "Shutter Finishes" %}
+                      <div class="swiper-slide">
+                        <div class="grid_blog_avatar grid_blog_avatar_2">
+                          <div class="cover_blog">
+                            <img src="/media/{{i.Image}}" alt="">
+                          </div>
+                        <div class="body_blog">
+                   
+
+                            <a href="single-blog.html" class="caption-item text-center">
+                              <h4>
+                                {{i.Title}}
+                              </h4>
+								              <p>{{i.Description|safe}}</p>
+                            
+                            </a>
+
+                          </div>
+                        </div>
+                        <!-- End grid_blog_avatar -->
+                      </div>
+                      {% endif %}
+                      {% endfor %}
+                      
+                    </div>
+
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next">
+                      <i class="tio chevron_right"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                      <i class="tio chevron_left"></i>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>	  
+		  
+		  	  
+	 <!--Cabinets and Hardware-->
+		  
+		      	<section class="service__workspace blog_slider padding-t-9 padding-px-6">
+          <div class="container">
+			          <div class="col-lg-12">
+				     <div class="padding-b-5 text-left">
+                      <h1>What's in your wardrobe</h1>
+						<p>Choose from our cabinets, add ons and accessories.</p>
+                    </div>
+				   </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-12">
+                <div class="swip__stories">
+                  <!-- Swiper -->
+                  <div class="swiper-container moduler-slider">
+                    <div class="title_sections_inner">
+                      <h2>
+                      The Cabinets</h2>
+                    </div>
+                    <div class="swiper-wrapper">
+                      {% for i in slider %}
+                      {% if i.catogory|stringformat:"s" == "The Cabinets" %}
+                      <div class="swiper-slide">
+                        <div class="grid_blog_avatar grid_blog_avatar_2">
+                          <div class="cover_blog">
+                            <img src="/media/{{i.Image}}" alt="">
+                          </div>
+                        <div class="body_blog">
+                   
+
+                            <a href="single-blog.html" class="caption-item text-center">
+                              <h4>
+                                {{i.Title}}
+                              </h4>
+								                <p>{{i.Description|safe}}</p>
+                            
+                            </a>
+
+                          </div>
+                        </div>
+                        <!-- End grid_blog_avatar -->
+                      </div>
+                      {% endif %}
+                      {% endfor %}
+                      
+                    </div>
+
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next">
+                      <i class="tio chevron_right"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                      <i class="tio chevron_left"></i>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+      
+	 <!--Appliances-->
+		  
+		      	<section class="service__workspace blog_slider padding-t-9 padding-px-6">
+          <div class="container">
+			  
+            <div class="row justify-content-center">
+              <div class="col-lg-12">
+                <div class="swip__stories">
+                  <!-- Swiper -->
+                  <div class="swiper-container moduler-slider">
+                    <div class="title_sections_inner">
+                      <h2>
+                      Add-ons</h2>
+                    </div>
+                    <div class="swiper-wrapper">
+                      {% for i in slider %}
+                      {% if i.catogory|stringformat:"s" == "Add-ons" %}
+                      <div class="swiper-slide">
+                        <div class="grid_blog_avatar grid_blog_avatar_2">
+                          <div class="cover_blog">
+                            <img src="/media/{{i.Image}}" alt="">
+                          </div>
+                        <div class="body_blog">
+                   
+
+                            <a href="single-blog.html" class="caption-item text-center">
+                              <h4>
+                                {{i.Title}}
+                              </h4>
+								                <p>{{i.Description|safe}}</p>
+                            
+                            </a>
+
+                          </div>
+                        </div>
+                        <!-- End grid_blog_avatar -->
+                      </div>
+                      {% endif %}
+                      {% endfor %}
+
+                    </div>
+
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next">
+                      <i class="tio chevron_right"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                      <i class="tio chevron_left"></i>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+		  
+		       
+	 <!--Sink and Faucets-->
+		  
+		      	<section class="service__workspace blog_slider padding-t-9 padding-px-6">
+          <div class="container">
+			  
+            <div class="row justify-content-center">
+              <div class="col-lg-12">
+                <div class="swip__stories">
+                  <!-- Swiper -->
+                  <div class="swiper-container moduler-slider">
+                    <div class="title_sections_inner">
+                      <h2>
+                      Accessories</h2>
+                    </div>
+                    <div class="swiper-wrapper">
+                      {% for i in slider %}
+                      {% if i.catogory|stringformat:"s" == "Accessories" %}
+                      <div class="swiper-slide">
+                        <div class="grid_blog_avatar grid_blog_avatar_2">
+                          <div class="cover_blog">
+                            <img src="/media/{{i.Image}}" alt="">
+                          </div>
+                        <div class="body_blog">
+                   
+
+                            <a href="single-blog.html" class="caption-item text-center">
+                              <h4>
+                                {{i.Title}}
+                              </h4>
+								            <p>{{i.Description|safe}}</p>
+                            
+                            </a>
+
+                          </div>
+                        </div>
+                        <!-- End grid_blog_avatar -->
+                      </div>
+                      {% endif %}
+                      {% endfor %}
+                    </div>
+
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next">
+                      <i class="tio chevron_right"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                      <i class="tio chevron_left"></i>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+		  
+		       
+		  
+<!-- Your wordrobe deconstructed -->
+      	
+		  <section class="section__stories blog_slider padding-t-9 padding-px-6">
+          <div class="container">
+			          <div class="col-lg-12">
+				     <div class="padding-b-5 text-left">
+                       <h1>Know your wardrobe inside-out</h1>
+						<p>Get familiar with the components that make your wardrobe a splendid piece of woodwork.</p>
+                    </div>
+				   </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-12">
+				     <div class="row justify-content-center">
+				  <div class="col-lg-8 col-12">
+				  <div class="grid_blog_avatar">
+                          <div class="cover_blog">
+                            <img class="h-100" src="https://images.livspace-cdn.com/w:800/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/know-your-wardrobe-1614166096-GmNtx/desktop-1614166435-3Yh2s/deconstruct-1614169139-EUXt8/l2-wardrobe-deconstruction-1614169161-8cjtI.jpg" alt="">
+                          </div>
+                        
+                        </div>
+				  </div>
+				    <div class="col-lg-4 col-12">
+				  <div class="body_blog">
+                   
+
+                            <a href="single-blog.html" class="caption-item text-center">
+                            <p data-v-25a7c00d="" class="body_default flex mb-4"><span data-v-25a7c00d="" class="subtitle_default mr-1">
+						1. 
+					</span> <span data-v-25a7c00d=""><span><span class="subtitle_default underlineText">Advance connector mechanism</span> for robust cabinet construction.</span></span></p>
+                            <p data-v-25a7c00d="" class="body_default flex mb-4"><span data-v-25a7c00d="" class="subtitle_default mr-1">
+						2. 
+					</span> <span data-v-25a7c00d=""><span>Cabinets assembled with <span class="subtitle_default underlineText">chipboard screws</span> protected by <span class="subtitle_default underlineText">PVC sockets</span> ensure durability</span></span></p>
+          <p data-v-25a7c00d="" class="body_default flex mb-4"><span data-v-25a7c00d="" class="subtitle_default mr-1">
+						3. 
+					</span> <span data-v-25a7c00d=""><span><span class="subtitle_default underlineText">Soft-closing</span> hinges reduce vibrations everytime a cabinet shuts, keeping it stress-free.</span></span></p>
+          <p data-v-25a7c00d="" class="body_default flex mb-4"><span data-v-25a7c00d="" class="subtitle_default mr-1">
+						4. 
+					</span> <span data-v-25a7c00d=""><span>Cabinets rest on <span class="subtitle_default underlineText">PVC legs</span> keeping them safe from moisture</span></span></p>
+          <p data-v-25a7c00d="" class="body_default flex mb-4"><span data-v-25a7c00d="" class="subtitle_default mr-1">
+						5. 
+					</span> <span data-v-25a7c00d=""><span><span class="subtitle_default underlineText">Gap between walls</span> and cabinets to prevent moisture from affecting the woodwork.</span></span></p>
+                            </a>
+
+                          </div>
+				  </div>
+				    </div>
+                
+              </div>
+            </div>
+
+          </div>
+        </section>
+<!-- Your wordrobe deconstructed -->
+      	
+		  <!-- <section class="service__workspace blog_slider padding-t-9 padding-px-6">
+          <div class="container">
+			          <div class="col-lg-12">
+				     <div class="padding-b-5 text-left">
+                       <h1>The 5 wordrobe zones</h1>
+						<p>We plan your wordrobe to ensure all task-related things are close to its zone thereby reducing unnecessary footsteps while cooking.</p>
+                    </div>
+				   </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-12">
+				     <div class="row justify-content-center">
+				  <div class="col-lg-8 col-12">
+				  <div class="grid_blog_avatar">
+                          <div class="cover_blog">
+                            <img src="https://images.livspace-cdn.com/w:1920/plain/https://d3ai42rl8fy79o.cloudfront.net/galactus/templates/5_kitchen_zones_updated_new.jpg.1630903250609" alt="">
+                          </div>
+                        
+                        </div>
+				  </div>
+				    <div class="col-lg-4 col-12">
+				  <div class="body_blog">
+                   
+    <div class="padding-t-5">
+    <p class="mr-3  mb-3  flex items-center">
+      <img loading="lazy" src="https://images.livspace-cdn.com/w:50/h:50/plain/https://d3ai42rl8fy79o.cloudfront.net/galactus/templates/consumable_storage.png.1630903262417" width="40" height="40" alt="Food storage" class="icon mr-2 loaded">
+      <span>Food storage area</span>
+    </p>
+    <p class="mr-3  mb-3  flex items-center">
+      <img loading="lazy" src="https://images.livspace-cdn.com/w:50/h:50/plain/https://d3ai42rl8fy79o.cloudfront.net/galactus/templates/non_consumable_storage.png.1630903269461" width="40" height="40" alt="Storage" class="icon mr-2 loaded">
+      <span>Storage area</span>
+    </p>
+    <p class="mr-3  mb-3  flex items-center">
+      <img loading="lazy" src="https://images.livspace-cdn.com/w:50/h:50/plain/https://d3ai42rl8fy79o.cloudfront.net/galactus/templates/cooking.png.1630903283828" width="40" height="40" alt="Cook" class="icon mr-2 loaded">
+      <span>Cooking area</span>
+    </p>
+    <p class="mr-3  mb-3  flex items-center">
+      <img loading="lazy" src="https://images.livspace-cdn.com/w:50/h:50/plain/https://d3ai42rl8fy79o.cloudfront.net/galactus/templates/preparing.png.1630903289257" width="40" height="40" alt="Prep" class="icon mr-2 loaded">
+      <span>Preparation area</span>
+    </p>
+    <p class="mr-3  mb-3  flex items-center">
+      <img loading="lazy" src="https://images.livspace-cdn.com/w:50/h:50/plain/https://d3ai42rl8fy79o.cloudfront.net/galactus/templates/cleaning.png.1630903294566" width="40" height="40" alt="Clean" class="icon mr-2 loaded">
+      <span>Cleanning area</span>
+    </p>
+  </div>
+
+                          </div>
+				  </div>
+				    </div>
+                
+              </div>
+            </div>
+
+          </div>
+        </section> -->
+
+
+
+
+		  
+			
+<!--Modular wordrobe Designs -->
+      	
+		  <section class="service__workspace blog_slider padding-py-9 padding-px-6">
+          <div class="container">
+			          <div class="col-lg-12">
+				     <div class="padding-b-5 text-left">
+                       <h1>Design Gallary</h1>
+						 <p>At Verantes , we craft simple modular wordrobe designs that are the perfect blend of functionality and style.</p> <!--Our curated, modular wordrobe designs in India range from simple wordrobes with minimal interiors to more elaborately designed wordrobe interior designs. All our modern wordrobe designs can be customised to fit your budget and existing space. We also have wordrobe interior designs that work for all shapes: Be it a L-shaped wordrobe, U-shaped wordrobe or open wordrobe design - crafting a wordrobe interior design that works best for your home is our goal! Browse through our top wordrobe designs of 2023 to transform your space today.</p> -->
+                    </div> 
+				   </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-12">
+          
+                 <div class="row justify-content-center">
+
+                 <div class="col-lg-4">
+                        <div class="grid_blog_avatar">
+                          <div class="cover_blog">
+                            <img class="h-100" src="{% static 'images/product1.jpeg' %}" alt="">
+                          </div>
+                     <div class="body_blog">
+                   
+
+                            <a href="single-blog.html" class="caption-item text-center">
+                              <h4>
+                             Coastal Chic Modern Kitchen Design
+                              </h4>
+                            
+                            </a>
+
+                          </div>
+                        </div>
+                        <!-- End grid_blog_avatar -->
+                      </div>
+
+                      <div class="col-lg-4">
+                        <div class="grid_blog_avatar">
+                          <div class="cover_blog">
+                            <img class="h-100" src="{% static 'images/product2.jpeg' %}" alt="">
+                          </div>
+                           <div class="body_blog">
+                   
+
+                            <a href="single-blog.html" class="caption-item text-center">
+                              <h4>
+                       Flawless White Straight Modular Kitchen
+                              </h4>
+                            
+                            </a>
+
+                          </div>
+                        </div>
+                        <!-- End grid_blog_avatar -->
+                      </div>
+
+                      <div class="col-lg-4">
+                        <div class="grid_blog_avatar">
+                          <div class="cover_blog">
+                            <img class="h-100" src="{% static 'images/product3.jpeg' %}" alt="">
+                          </div>
+                        <div class="body_blog">
+                   
+
+                            <a href="single-blog.html" class="caption-item text-center">
+                              <h4>
+                          Dark Elegance Kitchen Design
+                              </h4>
+                            
+                            </a>
+
+                          </div>
+                        </div>
+                        <!-- End grid_blog_avatar -->
+                      </div>
+
+                      <div class="col-lg-4">
+                        <div class="grid_blog_avatar">
+                          <div class="cover_blog">
+                            <img class="h-100" src="{% static 'images/product4.jpeg' %}" alt="">
+                          </div>
+                          <div class="body_blog">
+                   
+
+                            <a href="single-blog.html" class="caption-item text-center">
+                              <h4>
+                         Sleek Serenity Modern Kitchen Design
+                              </h4>
+                            
+                            </a>
+
+                          </div>
+                        </div>
+                        <!-- End grid_blog_avatar -->
+                      </div>
+
+                      <div class="col-lg-4">
+                        <div class="grid_blog_avatar">
+                          <div class="cover_blog">
+                            <img class="h-100" src="{% static 'images/product5.jpeg' %}" alt="">
+                          </div>
+                        <div class="body_blog">
+                   
+
+                            <a href="single-blog.html" class="caption-item text-center">
+                              <h4>
+                             Coastal Chic Modern Kitchen Design
+                              </h4>
+                            
+                            </a>
+
+                          </div>
+                        </div>
+                        <!-- End grid_blog_avatar -->
+                      </div>
+
+                      <div class="col-lg-4">
+                        <div class="grid_blog_avatar">
+                          <div class="cover_blog">
+                            <img class="h-100" src="https://super.homelane.com/Kitchens and Wardrobes/16812820309300455836f9f1a-HLKT00000834_batch-2-800x600_22-main.jpg" alt="">
+                          </div>
+                             <div class="body_blog">
+                   
+
+                            <a href="single-blog.html" class="caption-item text-center">
+                              <h4>
+                           Sleek Seafoam Modern Kitchen Design
+                              </h4>
+                            
+                            </a>
+
+                          </div>
+                        </div>
+                        <!-- End grid_blog_avatar -->
+                      </div>
+                    </div>
+
+                        <!-- End grid_blog_avatar -->
+                      </div>
+
+                      
+</div>
+					   <div class="row justify-content-center padding-py-3">
+                      <a href="#" class="btn btn_md_primary sweep_top sweep_letter c-white bg-dark opacity-1 rounded-8">
+                    <div class="inside_item">
+                      <span data-hover="View More Designs">View More Designs</span>
+                    </div>
+                  </a>
+                           
+</div>
+  </div>
+
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+		  <!-- CTA -->
+     <section class="bg-white text-lg-left text-sm-center padding-py-10">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="title_sections mb-0">
+                  <h2>Wish to speak to a designer?
+</h2>
+                  <p class="mb-0">Get all your pressing questions about stainless steel wordrobes, wardrobes, vanity units, and bars answered by our design experts.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-7 mt-4 mt-lg-0 text-lg-right my-lg-auto">
+           
+				   <a href="#" class="btn btn_md_primary sweep_top sweep_letter c-white bg-dark opacity-1 rounded-8">
+                    <div class="inside_item">
+                      <span data-hover="Get FREE design">Schedule a Callback</span>
+                    </div>
+                  </a>
+              </div>
+            </div>
+          </div>
+        </section>
+		  
+         <!-- clients -->
+  <section class="customers service__workspace padding-py-12" id="clients">
+        <div class="container">
+        <div class="slider-1">
+          <div class="row justify-content-center text-center">
+              <div class="col-md-8 col-lg-6">
+                <div class="title_sections">
+               <!--   <div class="before_title">
+                    <span class="c-orange-red">Features</span>
+                  </div>-->
+                  <h2>Our valued trusted partners</h2>
+                  <p>Discover why Verantes Living is the top choice for stainless steel wordrobes, wardrobes, vanity units and bars with these 9 distinctive advantages.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 px-12 text-center">
+                               <!-- Image Slider -->
+                    <div class="slider-container  px-8">
+                        <div class="swiper-container image-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class="img-fluid"  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" alt="alternative">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid"  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" alt="alternative">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid"  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" alt="alternative">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid"  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" alt="alternative">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid"  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" alt="alternative">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid"  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" alt="alternative">
+                                </div>
+								   <div class="swiper-slide">
+                                    <img class="img-fluid"  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" alt="alternative">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid"  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" alt="alternative">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid"  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" alt="alternative">
+                                </div>
+                            </div> <!-- end of swiper-wrapper -->
+                        </div> <!-- end of swiper container -->
+                    </div> <!-- end of slider-container -->
+                    <!-- end of image slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+       
+    </div>
+            
+        </div>
+    </section>  
+		  
+
+        <!-- End.contact__workspace -->
+		     <section class="service__workspace img-faci1 margin-my-0 padding-py-8">
+          <div class="container">
+			  
+   
+<div class="row">
+                <div class="col-12 col-md-6 col-lg-3 text-center  mb-4 mb-lg-0 bdr-right">
+                  
+                      <div class="justify-content-center">
+						   <img src="{% static 'images/place-order.png' %}">
+                        <h4>Flat 10 year warranty</h4>
+						  <p>Choose interiors designed with superior quality material, leaving no room for defects.</p>
+                         
+                      </div>
+                
+              </div>
+                <div class="col-12 col-md-6 col-lg-3 text-center  mb-4 mb-lg-0 bdr-right">
+                
+               
+                  
+                      <div class="justify-content-center">
+						   <img src="{% static 'images/place-order.png' %}">
+                        <h4>Flat 10 year warranty</h4>
+						  <p>Choose interiors designed with superior quality material, leaving no room for defects.</p>
+                        
+                      </div>
+              </div>
+	     <div class="col-12 col-md-6 col-lg-3 text-center  mb-4 mb-lg-0 bdr-right">
+                
+               
+                  
+                      <div class="justify-content-center">
+						   <img src="{% static 'images/place-order.png' %}">
+                        <h4>Flat 10 year warranty</h4>
+						  <p>Choose interiors designed with superior quality material, leaving no room for defects.</p>
+                         
+                      </div>            
+              </div>
+                <div class="col-12 col-md-6 col-lg-3 text-center  mb-4 mb-lg-0 bdr-right">
+                
+               
+                  
+                      <div class="justify-content-center">
+						   <img src="{% static 'images/place-order.png' %}">
+                        <h4>Flat 10 year warranty</h4>
+						  <p>Choose interiors designed with superior quality material, leaving no room for defects.</p>
+                      </div>
+              </div>
+              </div>
+		
+			</div>
+				 </div></section>
+			  
+      </main>
+    </div>
+    <!-- [id] content -->
+
+    <!-- Start Footer -->
+    {% include 'footer.html' %}
+	  
+    <!-- End. Footer -->
+
+  </div>
+  <!-- End. wrapper -->
+  {% include 'js.html' %}
+</body></html>

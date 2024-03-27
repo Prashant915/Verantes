@@ -1,0 +1,380 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P323NJGM');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content>
+    <meta name="keywords" content>
+    <meta name="author" content>
+
+    <title>Verantes living</title>
+
+    {% include 'css.html' %}
+
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-P323NJGM"
+        height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="wrapper">
+      <div id="content">
+        <!-- Start header -->
+        {% include 'header.html' %}
+        <!-- End header -->
+
+        <!-- Stat main -->
+        <main data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+          <!-- Start Banner Section -->
+          <section class="demo_1 demo__charity_inner demo__workspace"
+            id="booknow">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 col-lg-6">
+                  <div class="banner_title_other padding-b-14">
+                    <h1><span>{{banner.Title}}</span></h1>
+
+                  </div>
+                </div>
+                {% include 'contact.html' %}
+              </div>
+            </div>
+
+            <div class="bg__cover_office_inside">
+              <div class="img__off">
+                <img src="/media/{{banner.Image}}" alt>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="item__conatct">
+                      <!--     <div class="item__top text-lg-left text-sm-center">
+                      <h3 class="">Your Dream Kitchen Awaits</h3>
+                      <p>At Verantes Living, our expert kitchen designers are here to do the heavy lifting for you.</p>
+                    </div>-->
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </section>
+          <!-- End Banner -->
+
+          <!-- The Verantes kitchen ranger -->
+
+          <section
+            class="section__stories blog_slider padding-t-9 padding-px-6">
+            <div class="container">
+
+              <div class="row justify-content-center">
+                <div class="col-lg-12">
+                  <div class="swip__stories">
+                    <!-- Swiper -->
+                    <div class="swiper-container moduler-slider">
+                      <div class="title_sections_inner">
+                        <h2>Reaommended for you</h2>
+                      </div>
+                      <div class="swiper-wrapper">
+                        {% for i in slider1 %}
+                        {% if i.catogory|stringformat:"s" == "Handles" %}
+                        <div class="swiper-slide">
+                          <div class="grid_blog_avatar">
+                            <div class="cover_blog">
+                              <img src="/media/{{i.Image}}" alt>
+                            </div>
+                            <div class="body_blog">
+
+                              <a href="single-blog.html"
+                                class="caption-item text-center">
+                                <h4>
+                                  {{i.Title}}
+                                </h4>
+                                <p>{{i.Description|safe}}</p>
+
+                              </a>
+
+                            </div>
+                          </div>
+                          <!-- End grid_blog_avatar -->
+                        </div>
+                        {% endif %}
+                        {% endfor %}
+
+                      </div>
+
+                      <!-- Add Arrows -->
+                      <div class="swiper-button-next">
+                        <i class="tio chevron_right"></i>
+                      </div>
+                      <div class="swiper-button-prev">
+                        <i class="tio chevron_left"></i>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+
+          <section
+            class="section__stories blog_slider padding-t-9 padding-px-6">
+            <div class="container">
+
+              <div class="row justify-content-center">
+                <div class="col-lg-12">
+                  <div class="swip__stories">
+                    <!-- Swiper -->
+                    <div class="swiper-container moduler-slider">
+                      <div class="title_sections_inner">
+                        <h2>Best Selling Kitchens</h2>
+                      </div>
+                      <div class="swiper-wrapper">
+                        {% for i in slider1 %}
+                        {% if i.catogory|stringformat:"s" == "Handles" %}
+                        <div class="swiper-slide">
+                          <div class="grid_blog_avatar">
+                            <div class="cover_blog">
+                              <img src="/media/{{i.Image}}" alt>
+                            </div>
+                            <div class="body_blog">
+
+                              <a href="single-blog.html"
+                                class="caption-item text-center">
+                                <h4>
+                                  {{i.Title}}
+                                </h4>
+                                <p>{{i.Description|safe}}</p>
+
+                              </a>
+
+                            </div>
+                          </div>
+                          <!-- End grid_blog_avatar -->
+                        </div>
+                        {% endif %}
+                        {% endfor %}
+
+                      </div>
+
+                      <!-- Add Arrows -->
+                      <div class="swiper-button-next">
+                        <i class="tio chevron_right"></i>
+                      </div>
+                      <div class="swiper-button-prev">
+                        <i class="tio chevron_left"></i>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+
+          <section
+            class="section__stories blog_slider padding-t-9 padding-px-6">
+            <div class="container">
+
+              <div class="row justify-content-center">
+                <div class="col-lg-12">
+                  <div class="swip__stories">
+                    <!-- Swiper -->
+                    <div class="swiper-container moduler-slider">
+                      <div class="title_sections_inner">
+                        <h2>Best Selling Wardrobe</h2>
+                      </div>
+                      <div class="swiper-wrapper">
+                        {% for i in slider1 %}
+                        {% if i.catogory|stringformat:"s" == "Handles" %}
+                        <div class="swiper-slide">
+                          <div class="grid_blog_avatar">
+                            <div class="cover_blog">
+                              <img src="/media/{{i.Image}}" alt>
+                            </div>
+                            <div class="body_blog">
+
+                              <a href="single-blog.html"
+                                class="caption-item text-center">
+                                <h4>
+                                  {{i.Title}}
+                                </h4>
+                                <p>{{i.Description|safe}}</p>
+
+                              </a>
+
+                            </div>
+                          </div>
+                          <!-- End grid_blog_avatar -->
+                        </div>
+                        {% endif %}
+                        {% endfor %}
+
+                      </div>
+
+                      <!-- Add Arrows -->
+                      <div class="swiper-button-next">
+                        <i class="tio chevron_right"></i>
+                      </div>
+                      <div class="swiper-button-prev">
+                        <i class="tio chevron_left"></i>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+
+          <section class="test_monials__workspace margin-my-2 padding-py-10" id="testimonials">
+            <div class="container-fluid">
+              <div class="box__others  text-lg-left text-sm-center">
+                <div class="row">
+                  <div class="col-lg-5 pl-lg-0">
+                    <div class="img__people">
+                      <img src="{% static 'images/testi-side.png' %}" alt="">
+                      <div class="col-lg-5 item_title ">
+                        <div class="title_sections">
+                          <div class="before_title">
+                            <span class="c-orange-red">Testimonial</span>
+                          </div>
+                          <h2>Happy Verantes Customers</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-5 my-lg-auto mx-auto">
+                    <div class="people__say">
+                      <div class="swiper-container gallery-top swipe_circle">
+                        <!-- item Users -->
+                        <div class="person_thumbs">
+                          <div class="swiper-wrapper">
+                            {% for i in testimony %}
+                            <div class="swiper-slide">
+                              <img class="pagination rounded-circle" src="/media/{{i.Image}}" />
+                            </div>
+                            {% endfor %}
+                          </div>
+                        </div>
+                        <!-- item content -->
+                        <div class="swiper-wrapper">
+                          {% for i in testimony%}
+                          <div class="swiper-slide">
+                            <div class="img__user">
+                              <img src="/media/{{i.Image}}" alt="">
+                            </div>
+                            <div class="username👨">
+                              <h4>{{i.Name}}</h4>
+                              <span>{{i.Subtitle}}</span>
+                            </div>
+                            <div class="content col-md-8 mx-auto text-center">
+                              {{i.Review|safe}}
+                            </div>
+                            <div class="stars__rate">
+                              <i class="tio star"></i>
+                              <i class="tio star"></i>
+                              <i class="tio star"></i>
+                              <i class="tio star"></i>
+                              <i class="tio star"></i>
+                            </div>
+                          </div>
+                          {% endfor %}
+    
+                        </div>
+                      </div>
+                      <div class="simple__particles">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                      </div>
+                      <!-- End Swiper -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="service__workspace img-faci1 margin-my-0 padding-py-8">
+            <div class="container">
+                
+     
+  <div class="row">
+                  <div class="col-12 col-md-6 col-lg-3 text-center  mb-4 mb-lg-0 bdr-right">
+                  
+                 
+                    
+                        <div class="justify-content-center">
+                             <img src="{% static 'images/place-order.png' %}">
+                          <h4>Flat 10 year warranty</h4>
+                            <p>Choose interiors designed with superior quality material, leaving no room for defects.</p>
+                        </div>
+                </div>
+                  <div class="col-12 col-md-6 col-lg-3 text-center  mb-4 mb-lg-0 bdr-right">
+                        <div class="justify-content-center">
+                             <img src="{% static 'images/place-order.png' %}">
+                          <h4>Flat 10 year warranty</h4>
+                            <p>Choose interiors designed with superior quality material, leaving no room for defects.</p>
+                           
+                        </div>
+                </div>
+           <div class="col-12 col-md-6 col-lg-3 text-center  mb-4 mb-lg-0 bdr-right">
+                  
+                 
+                    
+                        <div class="justify-content-center">
+                             <img src="{% static 'images/place-order.png' %}">
+                          <h4>Flat 10 year warranty</h4>
+                            <p>Choose interiors designed with superior quality material, leaving no room for defects.</p>
+                           
+                        </div>
+                </div>
+                  <div class="col-12 col-md-6 col-lg-3 text-center  mb-4 mb-lg-0 bdr-right">                  
+                        <div class="justify-content-center">
+                             <img src="{% static 'images/place-order.png' %}">
+                          <h4>Flat 10 year warranty</h4>
+                            <p>Choose interiors designed with superior quality material, leaving no room for defects.</p>
+                        
+                        </div>         
+                </div>
+                </div>
+          
+              </div>
+                   </div></section>
+                   
+        </main>
+      </div>
+      {% include 'footer.html' %}
+    </div>
+    {% include 'js.html' %}
+  </body>
+</html>

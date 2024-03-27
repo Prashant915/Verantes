@@ -1,0 +1,109 @@
+<div class="col-lg-5 ml-auto">
+    <div class="row">
+      <div class="col-lg-12 ml-auto">
+        <div class="block__srarch">
+          <div class="title__search text-lg-left text-sm-center">
+            <h2>Book Design Consultation</h2>
+            <p>Let us know you and your requirements better</p>
+          </div>
+           <form class="needs-validation" novalidate action="{% url 'contactform' %}" id="mc-form" method="post">
+            {% csrf_token %}
+               <input type="hidden"  name="subject" value="Enquiry from Website">
+     <input type="hidden"  name="formid" value="landing Page">
+            <div class="col-12 p-0">
+          <div class="form-group">
+<input type="text" class="form-control" name="name"  id="name" placeholder="Enter your name" value="" required>
+
+             
+<div class="invalid-feedback">
+Please enter your name.
+</div>
+              
+              
+              
+            </div> </div>
+              <div class="col-12 p-0">
+           <div class="form-group">
+<input type="email" class="form-control" name="email"  id="email" placeholder="Enter your Email" required>
+
+               
+                
+<div class="invalid-feedback">
+Please enter a valid email address.
+</div>
+               
+               
+            </div></div>
+              <div class="col-12 p-0">
+           <div class="form-group">
+<input type="text" class="form-control" id="phonenumber" name="phonenumber" placeholder="Enter your Phone No" pattern="[1-9]{1}[0-9]{9}"  required>
+
+                <div class="invalid-feedback">
+Please enter a valid phone number.
+</div>
+               
+               
+            </div></div>
+              <div class="col-12 p-0">
+         <div class="form-group">
+<input type="text" class="form-control" name="city" placeholder="Enter your City" required>
+<div class="invalid-feedback">
+Please enter your City.
+</div>
+             
+             
+            </div></div>
+            <div class="col-12 p-0">
+              <div class="form-group">
+                   <select class="custom-select" name="product" required>
+     
+                     <option selected disabled value="">I am looking for</option>
+                  <option value="Modular Kitchen">Modular Kitchen</option>
+                  <option value="Modular Wardrobe">Modular Wardrobe</option>
+                  <option value="Others">Others</option>
+                </select>
+
+                <div class="invalid-feedback">
+Please Select the product.
+</div>
+          
+            
+            </div></div>
+            <div class="col-12 p-0">
+              <div class="form-group">
+               
+                <select class="custom-select" name="budget" required>
+     
+                     <option selected disabled value="">My Budget is</option>
+                
+                  <option value="Upto 5 Lacs">Upto 5 Lacs</option>
+                  <option value="5-10 Lacs">5-10 Lacs</option>
+                  <option value="10 Lacs +">10 Lacs +</option>
+                </select>
+              <div class="invalid-feedback">
+Please select your budget.
+</div>
+                  
+                  
+            </div> </div>
+            <div class="col-12 p-0 text-center">
+                <div class="g-recaptcha text-center w-100" data-sitekey="6LeyaIEoAAAAAFXvquSn3pqKsdhyTVynEVEU-hnp"></div>
+        
+            </div>
+                   <div class="col-12 p-0">
+                  <button type="submit" class="btn btn_md_primary sweep_top sweep_letter c-white bg-dark opacity-1 rounded-8 btn__search">
+        <div class="inside_item">
+          <span data-hover="Get FREE Design">Get FREE Estimate</span>
+        </div>
+      </button>
+            
+              <p class="text-center c-gray mt-3 mb-0 font-weight-bold mb-1">Call Us: <a class="c-gray" href="tel:+917291831831">+91 7291831831</a> </p>
+            </div>
+          </form>
+            
+
+
+        </div>
+      </div>
+    </div>
+  </div>

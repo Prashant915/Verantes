@@ -1,0 +1,53 @@
+{% load static %}
+<div class="hiding {% if request.path == "/signup-otp/" %}showhide{% endif %}">
+    <div class="sign">
+      <div class="block1">
+        <a href="{% url 'homepage' %}" class="clear"><i
+          class="fas fa-times"></i></a>
+        <p>Enter OTP</p>
+        <div class="otp-header"><p>Please enter verification code (OTP) sent
+            to {{email}} and +91-{{mobile}}</p></div>
+        <div>
+          {% csrf_token %}
+            {% if message %}
+            <div class="alert alert-{{class}}">
+            {{message}}
+            </div>
+            {% endif %}
+          <form action method="post">
+            {% csrf_token %}
+            <div class="form-group">
+              <input type="text" class="form-control" id="otp"
+                name="otp"
+                placeholder="Verify OTP" pattern="[0-9]{1}[0-9]{5}"
+                required>
+              <div class="invalid-feedback">
+                Enter OTP
+              </div>
+            </div>
+            <div class="signup-btn">
+              <input type="submit" value="VERIFY" class="btn btn-lg">
+            </div>
+          </form>
+        </div>
+        <div class="signgoogle">
+          <div class="session d-flex justify-content-center {{invisible}}">
+            <p>Session will be expired in</p><p class="count px-1"></p><p>sec</p>
+          </div>
+          <div class="ex-pired">
+            <p class="expired text-danger"></p>
+          </div>
+          <div>
+            <p>Resend</p>
+          </div>
+          <div class="alreadyacc">
+            <p>OTP has been sent to your email id and mobile number</p>
+          </div>
+        </div>
+      </div>
+      <div class="block2">
+        <a class="clear4" href="{% url 'homepage' %}"><i class="fas fa-times"></i></a>
+        <img src="{% static 'images/estimate_web.jpg' %}" alt"testing">
+      </div>
+    </div>
+  </div>
